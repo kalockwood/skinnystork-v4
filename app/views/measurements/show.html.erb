@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Measurement date:</strong>
+  <%= @measurement.measurement_date %>
+</p>
+
+<p>
+  <strong>Bust:</strong>
+  <%= @measurement.bust %>
+</p>
+
+<p>
+  <strong>Waist:</strong>
+  <%= @measurement.waist %>
+</p>
+
+<p>
+  <strong>Hip:</strong>
+  <%= @measurement.hip %>
+</p>
+
+<p>
+  <strong>Rthigh:</strong>
+  <%= @measurement.rthigh %>
+</p>
+
+<p>
+  <strong>Lthigh:</strong>
+  <%= @measurement.lthigh %>
+</p>
+
+<p>
+  <strong>Rbicep:</strong>
+  <%= @measurement.rbicep %>
+</p>
+
+<p>
+  <strong>Lbicep:</strong>
+  <%= @measurement.lbicep %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @measurement.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_measurement_path(@measurement) %> |
+<%= link_to 'Back', measurements_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  measurement_date: 2014-08-06
+  bust: 1
+  waist: 1
+  hip: 1
+  rthigh: 1
+  lthigh: 1
+  rbicep: 1
+  lbicep: 1
+
+two:
+  measurement_date: 2014-08-06
+  bust: 1
+  waist: 1
+  hip: 1
+  rthigh: 1
+  lthigh: 1
+  rbicep: 1
+  lbicep: 1
