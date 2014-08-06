@@ -1,0 +1,53 @@
+<%= form_for(@measurement) do |f| %>
+  <% if @measurement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@measurement.errors.count, "error") %> prohibited this measurement from being saved:</h2>
+
+      <ul>
+      <% @measurement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :measurement_date %><br>
+    <%= f.date_select :measurement_date %>
+  </div>
+  <div class="field">
+    <%= f.label :bust %><br>
+    <%= f.number_field :bust %>
+  </div>
+  <div class="field">
+    <%= f.label :waist %><br>
+    <%= f.number_field :waist %>
+  </div>
+  <div class="field">
+    <%= f.label :hip %><br>
+    <%= f.number_field :hip %>
+  </div>
+  <div class="field">
+    <%= f.label :rthigh %><br>
+    <%= f.number_field :rthigh %>
+  </div>
+  <div class="field">
+    <%= f.label :lthigh %><br>
+    <%= f.number_field :lthigh %>
+  </div>
+  <div class="field">
+    <%= f.label :rbicep %><br>
+    <%= f.number_field :rbicep %>
+  </div>
+  <div class="field">
+    <%= f.label :lbicep %><br>
+    <%= f.number_field :lbicep %>
+  </div>
+   <div class="field">
+    <%= f.label :User %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
